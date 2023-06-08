@@ -9,6 +9,7 @@ class Fighter {
     this.image = image;
     this.x = x;
     this.y = y;
+    this.range = 1;
   }
 
 
@@ -51,6 +52,10 @@ class Fighter {
    */
   getRandomInt(max) {
     return 1 + Math.floor(Math.random() * max);
+  }
+
+  getRange() {
+    return this.range;
   }
 
 
